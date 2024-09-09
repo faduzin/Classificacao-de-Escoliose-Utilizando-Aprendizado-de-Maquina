@@ -28,6 +28,7 @@ O projeto está organizado da seguinte forma:
   - **Slides_para_apresentacao.pdf**: Slides da apresentação.
 
 ## Como Executar
+Para visualização dos dados e resultados nos arquivos ".ipynb", recomenda-se o uso do site: https://nbviewer.org/
 
 ### Pré-requisitos:
 Não há um arquivo de requisitos. Para instalar as dependências necessárias, utilize as seguintes bibliotecas:
