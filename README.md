@@ -1,7 +1,7 @@
 
 # Classificação de Escoliose Utilizando Aprendizado de Máquina
 
-Este repositório contém o código e os resultados dos experimentos realizados para a **Classificação de Escoliose** utilizando dados obtidos por meio de um baropodômetro e modelos de inteligência artificial. O objetivo principal deste projeto foi classificar pacientes em dois grupos, de acordo com o ângulo de Cobb, utilizando redes neurais e outras técnicas de aprendizado de máquina.
+Este repositório contém o código e os resultados dos experimentos realizados por alunos da disciplina de IA da UNIFESP - Campus São José dos Campos para a **Classificação de Escoliose** utilizando dados obtidos por meio de um baropodômetro e modelos de inteligência artificial. O objetivo principal deste projeto foi classificar pacientes em dois grupos, de acordo com o ângulo de Cobb, utilizando redes neurais e outras técnicas de aprendizado de máquina.
 
 ## Descrição do Projeto
 
