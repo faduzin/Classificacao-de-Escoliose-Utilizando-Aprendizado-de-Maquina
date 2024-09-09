@@ -16,10 +16,12 @@ A escoliose é uma condição médica que envolve uma curvatura lateral anormal 
 O projeto está organizado da seguinte forma:
 
 - `preprocessamento/`: Scripts utilizados no pré-processamento dos dados. Esses scripts incluem:
-  - **anonimização_dados.py**: Anonimização dos nomes dos pacientes nos arquivos.
-  - **normalizacao_dados.py**: Aplicação de normalizações nas medições dos sensores.
-  - **geracao_imagens.py**: Transformação dos dados brutos em imagens.
-  - **agrupamento_imagens.py**: Agrupamento das imagens geradas para serem utilizadas nos treinamentos de CNN.
+  - **normalization_test.ipynb**: Testes de normalização.
+  - **image_conversion.py**: Aplicação de normalizações e conversão dos arquivos .txt em .png.
+  - **pngglue.py**: Agrupamento das imagens de 20 em 20 para formação de uma imagem maior.
+  - **pngmover.py**: Para mover os arquivos para um diretório.
+  - **sorttoclass.py**: Para mover os arquivos para um diretório de acordo com sua classe.
+  - **500_extractor.py**: Para extrair somente as 500 imagens centrais de cada partição das amostras (Closed Eyes ou Open Eyes).
 
 - Arquivos principais (notebooks, relatório, slides) estão localizados na raiz do repositório:
   - **Treino_pt1.ipynb**: Parte 1 de todo o treinamento.
