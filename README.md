@@ -25,7 +25,7 @@ O projeto está organizado da seguinte forma:
   - **Treino_pt1.ipynb**: Parte 1 de todo o treinamento.
   - **Treino_pt.ipynb**: Parte 2 de todo o treinamento.
   - **Relatorio.pdf**: Relatório completo do projeto.
-  - **Slides_para_apresentacao.pdf**: Slides da apresentação.
+  - **Apresentacao.pdf**: Slides da apresentação.
 
 ## Como Executar
 Para visualização dos dados e resultados nos arquivos ".ipynb", recomenda-se o uso do site: https://nbviewer.org/
