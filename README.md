@@ -61,7 +61,7 @@ Os resultados obtidos nos experimentos são apresentados através das seguintes 
 - **F1-Score**: Média harmônica entre precisão e recall.
 - **ROC-AUC**: Curva ROC para avaliar a discriminação entre classes.
 
-Os modelos alcançaram uma acurácia balanceada máxima de **60.34% ± 11.25%** ao utilizar uma Support Vector Machine (SVM), e **62.27%** ao utilizar a ResNet50 com validação cruzada de 5 folds.
+Os modelos alcançaram uma acurácia balanceada máxima de **60.34% ± 11.25%** ao utilizar uma Support Vector Machine (SVM), e **62.27%** em um dos folds ao utilizar a ResNet50.
 
 ## Conclusão
 
