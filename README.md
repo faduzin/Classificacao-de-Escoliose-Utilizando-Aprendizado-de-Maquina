@@ -30,7 +30,7 @@ O projeto está organizado da seguinte forma:
   - **Apresentacao.pdf**: Slides da apresentação.
 
 ## Como Executar
-Para visualização dos dados e resultados nos arquivos ".ipynb", recomenda-se o uso do site: https://nbviewer.org/
+Para visualização dos dados e resultados nos arquivos ".ipynb", recomenda-se o uso do site: https://nbviewer.org/, porém no atual momento a base de dados não foi publicada, assim não é possivel executar o codigo, porem ainda são passados por padrão passos para execução do código.
 
 ### Pré-requisitos:
 Não há um arquivo de requisitos. Para instalar as dependências necessárias, utilize as seguintes bibliotecas:
