@@ -37,6 +37,32 @@ scoliosis-classification-ml/
 └─ requirements.txt
 ```
 
+## How to Run
+
+1. **Clone the Repository**  
+```bash
+git clone https://github.com/username/scoliosis-classification-ml.git
+```
+
+2. **Navigate to the Project Folder**  
+```bash
+cd scoliosis-classification-ml
+```
+
+3. **Install Dependencies**  
+```bash
+pip install -r requirements.txt
+```
+
+4. **Open and Run the Notebooks**  
+```bash
+jupyter notebook
+```
+
+- Navigate to the `notebooks/` folder in the Jupyter interface.
+- Open `training_part1.ipynb` or `training_part2.ipynb` to run and explore the experiments.
+
+
 ## Trained Models & Approaches
 
 - **MLP** (Multilayer Perceptron): Network topology `[30-44-1]`.  
