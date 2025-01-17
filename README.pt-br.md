@@ -11,47 +11,58 @@ A escoliose é uma condição médica que envolve uma curvatura lateral anormal 
 - Utilizar dados de sensores de pressão obtidos por um baropodômetro para classificar pacientes em grupos de escoliose leve ou moderada, com base no ângulo de Cobb.
 - Explorar diferentes arquiteturas de modelos de IA, como redes neurais artificiais (MLP) e redes neurais convolucionais (CNN), para otimizar os resultados.
 
-## Estrutura do Projeto
+## Repository Structure
 
-O projeto está organizado da seguinte forma:
-
-- `preprocessamento/`: Scripts utilizados no pré-processamento dos dados. Esses scripts incluem:
-  - **normalization_test.ipynb**: Testes de normalização.
-  - **image_conversion.py**: Aplicação de normalizações e conversão dos arquivos .txt em .png.
-  - **pngglue.py**: Agrupamento das imagens de 20 em 20 para formação de uma imagem maior.
-  - **pngmover.py**: Para mover os arquivos para um diretório.
-  - **sorttoclass.py**: Para mover os arquivos para um diretório de acordo com sua classe.
-  - **500_extractor.py**: Para extrair somente as 500 imagens centrais de cada partição das amostras (Closed Eyes ou Open Eyes).
-
-- Arquivos principais (notebooks, relatório, slides) estão localizados na raiz do repositório:
-  - **Treino_pt1.ipynb**: Parte 1 de todo o treinamento.
-  - **Treino_pt.ipynb**: Parte 2 de todo o treinamento.
-  - **Relatorio.pdf**: Relatório completo do projeto.
-  - **Apresentacao.pdf**: Slides da apresentação.
-
-## Como Executar
-Para visualização dos dados e resultados nos arquivos ".ipynb", recomenda-se o uso do site: https://nbviewer.org/, porém no atual momento a base de dados não foi publicada, assim não é possivel executar o codigo, porem ainda são passados por padrão passos para execução do código.
-
-### Pré-requisitos:
-Não há um arquivo de requisitos. Para instalar as dependências necessárias, utilize as seguintes bibliotecas:
-
-```bash
-pip install numpy pandas matplotlib scikit-learn torch torchvision opencv-python
+```scss
+scoliosis-classification-ml/
+├─ README.md
+├─ README.pt-br.md
+├─ docs/
+│   ├─ presentation.pdf
+│   └─ report.pdf
+├─ notebooks/
+│   ├─ training_part1.ipynb
+│   └─ training_part2.ipynb
+├─ preprocessing/
+│   ├─ normalization_test.ipynb
+│   ├─ image_conversion.py
+│   ├─ pngglue.py
+│   ├─ pngmover.py
+│   ├─ sort_to_class.py
+│   └─ extract_500.py
+└─ requirements.txt
 ```
 
-### Passo a Passo:
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/username/escoliose-classificacao.git
-   ```
-2. Coloque os dados brutos no diretório `data/`.
-3. Execute os notebooks para realizar o pré-processamento e o treinamento dos modelos.
+## Como Executar
 
-### Estrutura dos Dados:
+1. **Clone o Repositório**  
+```bash
+git clone https://github.com/username/scoliosis-classification-ml.git
+```
+
+2. **Navegue até a Pasta do Projeto**  
+```bash
+cd scoliosis-classification-ml
+```
+
+3. **Instale as Dependências**  
+```bash
+pip install -r requirements.txt
+```
+
+4. **Abra e Execute os Notebooks**  
+```bash
+jupyter notebook
+```
+
+- No ambiente do Jupyter, navegue até a pasta `notebooks/`.
+- Abra os arquivos `training_part1.ipynb` ou `training_part2.ipynb` para executar e explorar os experimentos.
+
+## Estrutura dos Dados:
 - **Planilha de dados**: Contém dados antropométricos, medições dos sensores e os ângulos de Cobb dos pacientes.
 - **Dados brutos**: Arquivos de texto com as leituras dos sensores, organizados em pastas por paciente e condição (olhos abertos ou fechados).
 
-### Modelos Treinados:
+## Modelos Treinados:
 - **MLP**: Rede neural perceptron multicamadas com topologia `[30-44-1]`.
 - **SVM**: Rede neural por vetor de suporte.
 - **CNN**: Utilização da ResNet50 e EfficientNet para classificação das imagens geradas.

@@ -22,18 +22,13 @@ scoliosis-classification-ml/
 ├─ notebooks/
 │   ├─ training_part1.ipynb
 │   └─ training_part2.ipynb
-├─ src/
-│   └─ preprocessing/
-│       ├─ normalization_test.ipynb
-│       ├─ image_conversion.py
-│       ├─ pngglue.py
-│       ├─ pngmover.py
-│       ├─ sort_to_class.py
-│       └─ extract_500.py
-├─ data/
-│   ├─ raw/
-│   ├─ processed/
-│   └─ images/
+├─ preprocessing/
+│   ├─ normalization_test.ipynb
+│   ├─ image_conversion.py
+│   ├─ pngglue.py
+│   ├─ pngmover.py
+│   ├─ sort_to_class.py
+│   └─ extract_500.py
 └─ requirements.txt
 ```
 
@@ -41,7 +36,7 @@ scoliosis-classification-ml/
 
 1. **Clone the Repository**  
 ```bash
-git clone https://github.com/username/scoliosis-classification-ml.git
+git clone https://github.com/faduzin/scoliosis-classification-ml.git
 ```
 
 2. **Navigate to the Project Folder**  
@@ -62,6 +57,9 @@ jupyter notebook
 - Navigate to the `notebooks/` folder in the Jupyter interface.
 - Open `training_part1.ipynb` or `training_part2.ipynb` to run and explore the experiments.
 
+## Data Sctructure:
+- **Data Spreadsheet**: Contains anthropometric data, sensor measurements, and patients’ Cobb angles.
+- **Raw Data**: Text files containing sensor readings, organized into folders by patient and condition (open eyes or closed eyes).
 
 ## Trained Models & Approaches
 
