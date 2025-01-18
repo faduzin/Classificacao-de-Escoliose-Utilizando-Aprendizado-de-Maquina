@@ -21,8 +21,7 @@ scoliosis-classification-ml/
 │   ├─ presentation.pdf
 │   └─ report.pdf
 ├─ notebooks/
-│   ├─ training_part1.ipynb
-│   └─ training_part2.ipynb
+│   ├─ training.ipynb
 ├─ preprocessing/
 │   ├─ normalization_test.ipynb
 │   ├─ image_conversion.py
